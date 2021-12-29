@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+/* background: #e82252 */
+.base_color {
+ color: #e82252;
+}
+.base_background {
+ background: #e82252;
+ color: #fff;
+}
+.text-justify {
+ text-align: justify;
+}
+
+.navbar-brand img {
+ height: 35px;
+}
+.nav-link:hover {
+ color: #e82252 !important;
+}
+
+.hero_area {
+ min-height: 500px;
+}
+.hero_area>div {
+ height: 100%;
+}
+
+.hero_bg {
+ background-image: url("../images/backgrounds/hero_area_bg.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ min-height: 550px;
+}
+
+.hero_content hr {
+ width: 80%;
+ height: 2px;
+}
+
+.headline {
+ cursor: pointer;
+}
+.headline_hr {
+ width: 100px;
+ height: 5px !important;
+ transition: all 0.5s ease-in-out;
+}
+.headline:hover .headline_hr {
+ width: 120px;
+}
+
+.tonoy_1 {
+ max-width: 70%;
+}
+#services .card {
+ height: 100%;
+}
+#services .card-img-top {
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 55%;
+}
+
+.web_design {
+ background-image: url("../images/services/web_design.png");
+}
+
+.web_development {
+ background-image: url("../images/services/web_development.png");
+}
+
+.wordpress {
+ background-image: url("../images/services/wordpress.png");
+}
+
+.laravel {
+ background-image: url("../images/services/laravel.png");
+}
+.services_show_btn:hover {
+ color: #e82252;
+}
+#projects .card {
+ height: 100%;
+}
+#contact a:hover i,
+#contact a:hover span {
+ color: #e82252 !important;
+}
