@@ -12,6 +12,18 @@
   background-color: #aaa;
 }
 
+.section::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.section {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 .home_page {
   background: #202020;
   color: #fff;
@@ -128,8 +140,15 @@
 
 .about p {
   text-align: justify;
-  padding: 20px;
-  overflow-y: scroll;
-  height: 100%;
+  padding: 0 20px;
+}
+
+.about .progress_bars {
+  padding: 0 20px;
+  margin-right: 10%;
+}
+
+.about .progress_bars .progressbar {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
