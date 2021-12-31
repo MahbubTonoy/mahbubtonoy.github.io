@@ -21,4 +21,12 @@ particleground(document.getElementById('homePage'), {
 });
 
 
-//typed text
+//morphext
+$(".js-rotating").Morphext({
+ animation: "flipInY", // Overrides default "bounceIn"
+ separator: ",", // Overrides default ","
+ speed: 3000, // Overrides default 2000
+ complete: function () {
+     // Overrides default empty function
+ }
+});
