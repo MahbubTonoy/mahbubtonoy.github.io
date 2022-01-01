@@ -145,7 +145,7 @@
 
 .about .progress_bars {
   padding: 0 20px;
-  margin-right: 10%;
+  margin: 0 10% 30px 0;
 }
 
 .about .progress_bars .progressbar {
