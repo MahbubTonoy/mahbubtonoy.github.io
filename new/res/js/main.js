@@ -1,24 +1,29 @@
 //full page
-new fullpage('#fullpage', {
-    //navigation
-    // anchors: ['MahbubTonoy', 'about', 'skills', 'services', 'background', 'projects', 'contact'],
-    navigation: true,
-
-    //scroll
-    scrollingSpeed: 500,
-    scrollOverflow: true,
-    scrollBar:true,
-
-    //design
-    verticalCentered: false,
-
-});
+$(document).ready(function () {
+    $('#fullpage').fullpage({
+        //navigation
+        anchors: ['MahbubTonoy', 'about', 'services', 'background', 'projects', 'contact'],
+        navigation: true,
+        
+        //scroll
+        scrollingSpeed: 500,
+        // scrollBar:true,
+        scrollOverflow: true,
+        
+        //design
+        verticalCentered: false,
+        
+    });
+})
 
 
 //particleground
-particleground(document.getElementById('homePage'), {
-    dotColor: '#fff',
-    lineColor: '#fff',
+$(document).ready(() => {
+    particleground(document.getElementById('homePage'), {
+        dotColor: '#fff',
+        lineColor: '#fff',
+    });
+    $("#homepage canvas").attr("height", document.clientHeight);
 });
 
 
