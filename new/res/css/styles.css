@@ -137,30 +137,54 @@ h2 {
 .about .img_wrapper img {
   max-width: 100%;
   max-height: 100%;
-  padding: 0 15%;
 }
 
 .about p {
   text-align: justify;
-  padding: 0 20px;
+  font-size: 400;
 }
 
-.about .progress_bars {
-  position: relative;
-  z-index: 999;
-  padding: 0 20px;
-  margin: 0 10% 30px 0;
+.about p span {
+  font-size: 25px;
 }
 
-.about .progress_bars .progressbar {
-  margin-bottom: 5px;
+.about .social {
+  list-style-type: none;
+  padding-bottom: 20px;
 }
 
-.services {
+.about .social li {
+  display: inline-block;
+}
+
+.about .social li a {
+  font-size: 35px;
+  padding-right: 15px;
+  color: rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.about .social li a:hover {
+  color: #2cac64;
+}
+
+.skills {
   background-color: #2cac64;
 }
 
-.services h2 {
+.skills h2 {
   color: #fff;
+  margin-bottom: 20px;
+}
+
+.skills .progress_bars {
+  position: relative;
+  z-index: 999;
+  padding: 20px;
+  margin: 0 5%;
+  background: #fff;
+  width: 90%;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
