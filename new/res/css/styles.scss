@@ -20,8 +20,7 @@ html {
 h2 {
   text-align: center;
   color: #404040;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 40px;
   padding-top: 20px;
   position: relative;
@@ -140,7 +139,7 @@ h2 {
       a {
         font-size: 35px;
         padding-right: 15px;
-        color: rgba(0, 0, 0, 0.250);
+        color: rgba(0, 0, 0, 0.25);
         transition: all 0.3s linear;
       }
       a:hover {
@@ -149,7 +148,6 @@ h2 {
     }
   }
 }
-
 
 .skills {
   background-color: $colorPrimary;
@@ -165,5 +163,107 @@ h2 {
     background: $colorWhite;
     width: 90%;
     border-radius: 5px;
+  }
+}
+
+.background {
+  h2 {
+    color: $colorPrimary;
+    font-size: 35px;
+  }
+  main {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  p {
+    border-top: 2px solid;
+    border-image: linear-gradient($colorPrimary, $colorPrimary);
+    border-image-slice: 1;
+    // border-width: 2px;
+    margin: 0 5%;
+    padding: 30px;
+    position: relative;
+    color: $colorDark;
+    text-align: justify;
+    //numbers
+    &:before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f19d";
+      position: absolute;
+      border-radius: 50%;
+      padding: 6px 0 0 3px;
+      height: 35px;
+      width: 35px;
+      background-color: $colorPrimary;
+      text-align: center;
+      color: $colorWhite;
+    }
+  }
+
+  //odd number borders
+  p:nth-child(odd) {
+    border-right: 2px solid;
+    padding-left: 0;
+
+    &:before {
+      left: 100%;
+      margin-left: -20px;
+    }
+  }
+  //even number borders
+  p:nth-child(even) {
+    border-left: 2px solid;
+    padding-right: 0;
+
+    &:before {
+      right: 100%;
+      margin-right: -20px;
+    }
+  }
+  //handle first and last
+  p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .work {
+    p {
+      &:before {
+        content: "\f0b1";
+      }
+    }
+    //odd number borders
+    p:nth-child(odd) {
+      border-left: 2px solid;
+      border-right: 0px solid;
+      padding-right: 0;
+      padding-left: 30px;
+      &:before {
+        left: 0%;
+        margin-left: -20px;
+      }
+    }
+    //even number borders
+    p:nth-child(even) {
+      border-right: 2px solid;
+      border-left: 0px solid;
+      padding-left: 0px;
+      padding-right: 30px;
+      &:before {
+        right: 0%;
+        margin-right: -20px;
+      }
+    }
   }
 }

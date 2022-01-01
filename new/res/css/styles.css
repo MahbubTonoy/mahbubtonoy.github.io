@@ -187,4 +187,105 @@ h2 {
   width: 90%;
   border-radius: 5px;
 }
+
+.background h2 {
+  color: #2cac64;
+  font-size: 35px;
+}
+
+.background main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.background p {
+  border-top: 2px solid;
+  -o-border-image: linear-gradient(#2cac64, #2cac64);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#2cac64), to(#2cac64));
+     border-image: linear-gradient(#2cac64, #2cac64);
+  border-image-slice: 1;
+  margin: 0 5%;
+  padding: 30px;
+  position: relative;
+  color: #202020;
+  text-align: justify;
+}
+
+.background p:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f19d";
+  position: absolute;
+  border-radius: 50%;
+  padding: 6px 0 0 3px;
+  height: 35px;
+  width: 35px;
+  background-color: #2cac64;
+  text-align: center;
+  color: #fff;
+}
+
+.background p:nth-child(odd) {
+  border-right: 2px solid;
+  padding-left: 0;
+}
+
+.background p:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+.background p:nth-child(even) {
+  border-left: 2px solid;
+  padding-right: 0;
+}
+
+.background p:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+
+.background p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.background p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.background .work p:before {
+  content: "\f0b1";
+}
+
+.background .work p:nth-child(odd) {
+  border-left: 2px solid;
+  border-right: 0px solid;
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.background .work p:nth-child(odd):before {
+  left: 0%;
+  margin-left: -20px;
+}
+
+.background .work p:nth-child(even) {
+  border-right: 2px solid;
+  border-left: 0px solid;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.background .work p:nth-child(even):before {
+  right: 0%;
+  margin-right: -20px;
+}
 /*# sourceMappingURL=styles.css.map */

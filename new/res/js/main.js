@@ -2,7 +2,7 @@
 $(document).ready(function () {
     $('#fullpage').fullpage({
         //navigation
-        anchors: ['MahbubTonoy', 'about', 'skills', 'services', 'background', 'projects', 'contact'],
+        anchors: ['MahbubTonoy', 'about', 'skills', 'background', 'services', 'projects', 'contact', 'footer'],
         navigation: true,
         
         //scroll
