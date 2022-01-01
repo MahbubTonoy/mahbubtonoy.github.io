@@ -7,6 +7,7 @@ new fullpage('#fullpage', {
     //scroll
     scrollingSpeed: 500,
     scrollOverflow: true,
+    scrollBar:true,
 
     //design
     verticalCentered: false,
@@ -71,3 +72,8 @@ $(document).ready(() => {
         height: '7px',
     });
 });
+
+
+// console.log(fullpage_api.getActiveSection());
+
+

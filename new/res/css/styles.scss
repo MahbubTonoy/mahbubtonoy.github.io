@@ -8,12 +8,12 @@
   background-color: #aaa;
 }
 
-.section::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.section {
+html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -126,6 +126,8 @@
     padding: 0 20px;
   }
   .progress_bars {
+    position: relative;
+    z-index: 999;
     padding: 0 20px;
     margin: 0 10% 30px 0;
     .progressbar {
