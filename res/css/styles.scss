@@ -269,7 +269,9 @@ h2 {
 }
 
 .projects {
-  padding: 50px;
+  .row {
+    margin: 50px;
+  }
   .project-card {
     width: 100%;
     margin: 30px auto;
