@@ -2,7 +2,7 @@
 $(document).ready(function () {
     $('#fullpage').fullpage({
         //navigation
-        anchors: ['MahbubTonoy', 'about', 'skills', 'background', 'services', 'projects', 'contact', 'footer'],
+        anchors: ['MahbubTonoy', 'about', 'skills', 'background', 'projects', 'contact', 'footer'],
         navigation: true,
         
         //scroll
@@ -77,8 +77,3 @@ $(document).ready(() => {
         height: '7px',
     });
 });
-
-
-// console.log(fullpage_api.getActiveSection());
-
-

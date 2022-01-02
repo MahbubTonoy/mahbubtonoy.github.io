@@ -267,3 +267,97 @@ h2 {
     }
   }
 }
+
+.projects {
+  margin: 50px;
+  .project-card {
+    width: 100%;
+    margin: 30px auto;
+    padding-top: 100%;
+    border-radius: 10px;
+    background-color: $colorOffWhite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    .hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      color: $colorWhite;
+      opacity: 0;
+      transition: all 0.3s ease;
+      .technology {
+        position: absolute;
+        padding: 7px 10px;
+        border-radius: 0 0 10px 10px;
+        background-color: $colorPrimary;
+        top: -50%;
+        left: 10px;
+        transition: all 0.3s ease;
+      }
+      .name {
+        position: absolute;
+        left: 0;
+        bottom: -50%;
+        font-size: 30px;
+        padding: 10px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        // text-align: justify;
+        span {
+          display: inline-block;
+          font-size: 16px;
+        }
+      }
+    }
+    .hover:hover {
+      opacity: 1;
+      .technology {
+        top: 0;
+      }
+      .name {
+        bottom: 0;
+      }
+    }
+  }
+  .analog-clock {
+    background-image: url("../images/projects/analog_clock.png");
+  }
+  .basicCalculator {
+    background-image: url("../images/projects/basicCalculator.png");
+  }
+  .typeText {
+    background-image: url("../images/projects/type_text.png");
+  }
+  .typerBoss {
+    background-image: url("../images/projects/typerBoss.png");
+  }
+}
+
+.contact {
+  form {
+    width: 100%;
+    padding: 45px;
+    label {
+      margin-top: 10px;
+    }
+    button {
+      background-color: $colorPrimary;
+      color: $colorWhite;
+    }
+    button:hover {
+      color: $colorWhite;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none !important;
+      border: 1px solid $colorPrimary;
+      box-shadow: 0 0 5px $colorPrimary;
+    }
+  }
+}

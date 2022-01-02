@@ -288,4 +288,115 @@ h2 {
   right: 0%;
   margin-right: -20px;
 }
+
+.projects {
+  margin: 50px;
+}
+
+.projects .project-card {
+  width: 100%;
+  margin: 30px auto;
+  padding-top: 100%;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .project-card .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects .project-card .hover .technology {
+  position: absolute;
+  padding: 7px 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: #2cac64;
+  top: -50%;
+  left: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects .project-card .hover .name {
+  position: absolute;
+  left: 0;
+  bottom: -50%;
+  font-size: 30px;
+  padding: 10px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects .project-card .hover .name span {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.projects .project-card .hover:hover {
+  opacity: 1;
+}
+
+.projects .project-card .hover:hover .technology {
+  top: 0;
+}
+
+.projects .project-card .hover:hover .name {
+  bottom: 0;
+}
+
+.projects .analog-clock {
+  background-image: url("../images/projects/analog_clock.png");
+}
+
+.projects .basicCalculator {
+  background-image: url("../images/projects/basicCalculator.png");
+}
+
+.projects .typeText {
+  background-image: url("../images/projects/type_text.png");
+}
+
+.projects .typerBoss {
+  background-image: url("../images/projects/typerBoss.png");
+}
+
+.contact form {
+  width: 100%;
+  padding: 45px;
+}
+
+.contact form label {
+  margin-top: 10px;
+}
+
+.contact form button {
+  background-color: #2cac64;
+  color: #fff;
+}
+
+.contact form button:hover {
+  color: #fff;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: none !important;
+  border: 1px solid #2cac64;
+  -webkit-box-shadow: 0 0 5px #2cac64;
+          box-shadow: 0 0 5px #2cac64;
+}
 /*# sourceMappingURL=styles.css.map */
