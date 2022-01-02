@@ -399,4 +399,12 @@ h2 {
   -webkit-box-shadow: 0 0 5px #2cac64;
           box-shadow: 0 0 5px #2cac64;
 }
+
+.footer {
+  background: #202020;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
