@@ -19,11 +19,11 @@ $(document).ready(function () {
 
 //particleground
 $(document).ready(() => {
-    particleground(document.getElementById('homePage'), {
+    particleground(document.getElementById('particles'), {
         dotColor: '#fff',
         lineColor: '#fff',
     });
-    $("#homepage canvas").attr("height", document.clientHeight);
+    // $("#particles canvas").attr(style, "height: 100%");
 });
 
 

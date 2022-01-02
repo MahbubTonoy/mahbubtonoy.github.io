@@ -37,6 +37,8 @@ h2 {
   background: #202020;
   color: #fff;
   z-index: 0;
+  position: relative;
+  height: 100vh;
 }
 
 .home_page .navbar {
@@ -57,15 +59,23 @@ h2 {
   float: right;
 }
 
-.home_page #homePage {
+.home_page #particles {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.2;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home_page #particles canvas {
   position: absolute;
   left: 0;
   top: 75px;
-  bottom: 0;
-  height: 100%;
   width: 100%;
-  opacity: 0.2;
-  z-index: 0;
+  height: 100%;
+  z-index: -1;
 }
 
 .home_page .homepage_item_wrapper {
