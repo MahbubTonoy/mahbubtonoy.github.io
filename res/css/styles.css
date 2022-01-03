@@ -72,7 +72,7 @@ h2 {
 .home_page #particles canvas {
   position: absolute;
   left: 0;
-  top: 75px;
+  top: 0;
   width: 100%;
   height: 100% !important;
   z-index: -1;
