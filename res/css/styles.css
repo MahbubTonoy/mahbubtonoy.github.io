@@ -79,7 +79,7 @@ h2 {
 }
 
 .home_page .homepage_item_wrapper {
-  height: 100vh;
+  height: calc(100vh - 75px);
   width: 100%;
   padding: 30px;
   position: relative;
