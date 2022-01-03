@@ -57,17 +57,17 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    canvas{
+    canvas {
       position: absolute;
       left: 0;
       top: 75px;
       width: 100%;
-      height: 100%;
+      height: 100% !important;
       z-index: -1;
-  }
+    }
   }
   .homepage_item_wrapper {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding: 30px;
     position: relative;
@@ -373,7 +373,7 @@ h2 {
   }
 }
 
-.footer{
+.footer {
   background: $colorDark;
   color: $colorWhite;
   padding: 20px;
